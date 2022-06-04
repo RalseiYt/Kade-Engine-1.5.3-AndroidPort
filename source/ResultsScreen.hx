@@ -4,7 +4,6 @@ import openfl.geom.Matrix;
 import openfl.display.BitmapData;
 import flixel.system.FlxSound;
 import flixel.util.FlxAxes;
-import flixel.FlxSubState;
 import Options.Option;
 import flixel.input.FlxInput;
 import flixel.input.keyboard.FlxKey;
@@ -18,7 +17,9 @@ import flixel.text.FlxText;
 import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
 import flixel.util.FlxColor;
+#if newgrounds
 import io.newgrounds.NG;
+#end
 import lime.app.Application;
 import lime.utils.Assets;
 import flixel.math.FlxMath;
@@ -28,7 +29,7 @@ import flixel.input.FlxKeyManager;
 
 using StringTools;
 
-class ResultsScreen extends FlxSubState
+class ResultsScreen extends MusicBeatSubstate
 {
     public var background:FlxSprite;
     public var text:FlxText;
@@ -159,6 +160,10 @@ class ResultsScreen extends FlxSubState
 
         cameras = [FlxG.cameras.list[FlxG.cameras.list.length - 1]];
 
+    #if android
+    addVirtualPad(NONE, A);
+    #end
+
 		super.create();
 	}
 
@@ -172,7 +177,7 @@ class ResultsScreen extends FlxSubState
 
         // keybinds
 
-        if (FlxG.keys.justPressed.ENTER)
+        if (controls.ENTER)
         {
             music.fadeOut(0.3);
             
