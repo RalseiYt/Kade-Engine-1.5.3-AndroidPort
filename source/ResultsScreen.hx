@@ -162,6 +162,7 @@ class ResultsScreen extends MusicBeatSubstate
 
     #if android
     addVirtualPad(NONE, A);
+    addPadCamera();
     #end
 
 		super.create();
@@ -177,7 +178,7 @@ class ResultsScreen extends MusicBeatSubstate
 
         // keybinds
 
-        if (controls.ENTER)
+        if (controls.ACCEPT)
         {
             music.fadeOut(0.3);
             
