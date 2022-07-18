@@ -69,7 +69,6 @@ class Character extends FlxSprite
 			  animation.addByPrefix('idle', 'Sonk IDLE', 24, false);
 			  animation.addByPrefix('singLEFT', 'Sonk SINGS LEFT', 24, false);
 			  animation.addByPrefix('singDOWN', 'Sonk SINGS DOWN', 24, false);
-
 			  animation.addByPrefix('singUP', 'Sonk SINGS UP', 24, false);
 			  animation.addByPrefix('singRIGHT', 'Sonk SING RIGHT', 24, false);
 
