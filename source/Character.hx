@@ -62,6 +62,25 @@ class Character extends FlxSprite
 
 				playAnim('danceRight');
 
+                                case 'sonk':
+			  tex = Paths.getSparrowAtlas('characters/SonkkkROM', 'shared');
+			  frames = tex;
+
+			  animation.addByPrefix('idle', 'Sonk IDLE', 24, false);
+			  animation.addByPrefix('singLEFT', 'Sonk SINGS LEFT', 24, false);
+			  animation.addByPrefix('singDOWN', 'Sonk SINGS DOWN', 24, false);
+
+			  animation.addByPrefix('singUP', 'Sonk SINGS UP', 24, false);
+			  animation.addByPrefix('singRIGHT', 'Sonk SING RIGHT', 24, false);
+
+			  addOffset('idle');
+			  addOffset('singLEFT', 67, -27);
+			  addOffset('singDOWN', 55, -16);
+			  addOffset('singUP', 16, 45);
+			  addOffset('singRIGHT', 29, -6);
+
+			  playAnim('idle');
+
 			case 'gf-christmas':
 				tex = Paths.getSparrowAtlas('characters/gfChristmas');
 				frames = tex;
