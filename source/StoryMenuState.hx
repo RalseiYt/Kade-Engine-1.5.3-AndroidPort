@@ -31,7 +31,8 @@ class StoryMenuState extends MusicBeatState
 		['Satin Panties', "High", "Milf"],
 		['Cocoa', 'Eggnog', 'Winter Horrorland'],
 		['Senpai', 'Roses', 'Thorns']
-	];
+                ['sonkin-hackin']
+        ];
 	var curDifficulty:Int = 1;
 
 	public static var weekUnlocked:Array<Bool> = [true, true, true, true, true, true, true];
@@ -44,8 +45,8 @@ class StoryMenuState extends MusicBeatState
 		['mom', 'bf', 'gf'],
 		['parents-christmas', 'bf', 'gf'],
 		['senpai', 'bf', 'gf']
-	];
-
+                ['', 'bf', 'gf'],
+        ];
 	var weekNames:Array<String> = [
 		"",
 		"Daddy Dearest",
@@ -54,8 +55,8 @@ class StoryMenuState extends MusicBeatState
 		"MOMMY MUST MURDER",
 		"RED SNOW",
 		"Hating Simulator ft. Moawling"
-	];
-
+	        "Sonk will hack you if you don't play this week"
+        ];
 	var txtWeekTitle:FlxText;
 
 	var curWeek:Int = 0;
