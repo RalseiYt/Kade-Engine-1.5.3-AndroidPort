@@ -54,7 +54,7 @@ class StoryMenuState extends MusicBeatState
 		"PICO",
 		"MOMMY MUST MURDER",
 		"RED SNOW",
-		"Hating Simulator ft. Moawling"
+		"Hating Simulator ft. Moawling",
 	        "Sonk will hack you if you don't play this week"
         ];
 	var txtWeekTitle:FlxText;
