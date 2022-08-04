@@ -44,9 +44,9 @@ class StoryMenuState extends MusicBeatState
 		['pico', 'bf', 'gf'],
 		['mom', 'bf', 'gf'],
 		['parents-christmas', 'bf', 'gf'],
-		['senpai', 'bf', 'gf']
-                ['', 'bf', 'gf'],
-        ];
+		['senpai', 'bf', 'gf'],
+    ['', 'bf', 'gf']
+  ];
 	var weekNames:Array<String> = [
 		"",
 		"Daddy Dearest",
